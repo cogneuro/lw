@@ -14,3 +14,4 @@
 - [4.1 Inferring a mean and standard deviation](https://cogneuro.github.io/lw/ch04/04_1_Gaussian_Gaussian.html)
 - [4.2 The seven scientists](https://cogneuro.github.io/lw/ch04/04_2_Gaussian_SevenScientists.html)
 - [4.3 Repeated measurement of IQ](https://cogneuro.github.io/lw/ch04/04_3_Gaussian_IQ.html)
+
