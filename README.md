@@ -18,3 +18,4 @@
 ### 5. Some examples of data analysis
 - [5.1 Pearson correlation](https://cogneuro.github.io/lw/ch05/05_1_DataAnalysis_Correlation_1.html)
 - [5.2 Pearson correlation with uncertainty](https://cogneuro.github.io/lw/ch05/05_2_DataAnalysis_Correlation_2.html)
+- [5.3 The Kappa Coefficient of Agreement](https://cogneuro.github.io/lw/ch05/05_3_DataAnalysis_Kappa.html)
