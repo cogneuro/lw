@@ -25,3 +25,9 @@
 
 ### 6. Latent-mixture models
 - [6.1 Exam scores](https://cogneuro.github.io/lw/ch06/06_1_LatentMixtures_Exams_1.html)
+- [6.2 Exam scores with individual differences](https://cogneuro.github.io/lw/ch06/06_2_LatentMixtures_Exams_2.html)
+- [6.3 Twenty questions](https://cogneuro.github.io/lw/ch06/06_3_LatentMixtures_TwentyQuestions.html)
+- [6.4 The two-country quiz](https://cogneuro.github.io/lw/ch06/06_4_LatentMixtures_TwoCountries.html)
+- [6.5 Assessment of malingering](https://cogneuro.github.io/lw/ch06/06_5_LatentMixtures_Malingering_1.html)
+- [6.6 Individual differences in malingering](https://cogneuro.github.io/lw/ch06/06_6_LatentMixtures_Malingering_2.html)
+- [6.7 Alzheimer’s recall test cheating](https://cogneuro.github.io/lw/ch06/06_7_LatentMixtures_Cheating.html)
