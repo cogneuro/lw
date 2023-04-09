@@ -22,3 +22,6 @@
 - [5.4 Change detection in time series data](https://cogneuro.github.io/lw/ch05/05_4_DataAnalysis_ChangeDetection.html)
 - [5.5 Censored data](https://cogneuro.github.io/lw/ch05/05_5_DataAnalysis_ChaSaSoon.html)
 - [5.6 Recapturing planes](https://cogneuro.github.io/lw/ch05/05_6_DataAnalysis_Plane.html)
+
+### 6. Latent-mixture models
+- [6.1 Exam scores](https://cogneuro.github.io/lw/ch06/06_1_LatentMixtures_Exams_1.html)
