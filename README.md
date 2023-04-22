@@ -31,3 +31,8 @@
 - [6.5 Assessment of malingering](https://cogneuro.github.io/lw/ch06/06_5_LatentMixtures_Malingering_1.html)
 - [6.6 Individual differences in malingering](https://cogneuro.github.io/lw/ch06/06_6_LatentMixtures_Malingering_2.html)
 - [6.7 Alzheimer’s recall test cheating](https://cogneuro.github.io/lw/ch06/06_7_LatentMixtures_Cheating.html)
+
+### 8. Comparing Gaussian means
+- [8.1 One-sample comparison](https://cogneuro.github.io/lw/ch08/08_1_ModelSelection_OneSample.html)
+- [8.2 Order-restricted one-sample comparison](https://cogneuro.github.io/lw/ch08/08_2_ModelSelection_OneSampleOrderRestricted.html)
+- [8.3 Two-sample comparison](https://cogneuro.github.io/lw/ch08/08_3_ModelSelection_TwoSample.html)
