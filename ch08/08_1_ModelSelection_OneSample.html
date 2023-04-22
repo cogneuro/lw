@@ -2195,12 +2195,12 @@ B_{r0} \approx
   p \times B_{e0}\ , &amp; if\ \delta \leq 0
 \end{cases}
 \]</span> <span class="math inline">\(\delta &gt; 0\)</span>는 자료가
-<strong>sign-restriction</strong>과 일치하는 경우이다.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> 본 사례에서는 <span class="math inline">\(H_3: \delta &gt; 0\)</span>에 해당한다(Exercise
-8.2.1).</p>
+<strong>sign-restriction</strong>과 일치하는 경우이다.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> 본 사례에서는 <span class="math inline">\(H_3: \delta &gt; 0\)</span>에 해당한다(<a href="https://cogneuro.github.io/lw/ch08/08_2_ModelSelection_OneSampleOrderRestricted.html">Exercise
+8.2.1</a>).</p>
 <p><span class="math inline">\(\delta \leq 0\)</span>는 자료가
 <strong>sign-restriction</strong>과 일치하지 않는 경우이다. 본
 사례에서는 <span class="math inline">\(H_2: \delta &lt; 0\)</span>에
-해당한다(다음 <a href="https://cogneuro.github.io/lw/ch06/08_1_ModelSelection_OneSample.html">단락</a>.</p>
+해당한다(다음 <a href="https://cogneuro.github.io/lw/ch08/08_2_ModelSelection_OneSampleOrderRestricted.html">단락</a>).</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>t.res <span class="ot">&lt;-</span> <span class="fu">t.test</span>(x)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>t.res<span class="sc">$</span>p.value</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">0.4364555</span></span>
@@ -2212,7 +2212,8 @@ B_{r0} \approx
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># data-inconsistent, sign-restricted H2 BF: delta &lt; 0</span></span>
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>( BF20 <span class="ot">&lt;-</span> t.res<span class="sc">$</span>p.value<span class="sc">*</span>(<span class="dv">1</span><span class="sc">/</span>BFe0) )</span>
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">0.07179136</span></span></code></pre></div>
-<p><span class="math inline">\(BF_{30}\)</span> = 0.26이고 <span class="math inline">\(BF_{03}\)</span> = 3.89이다. <span class="math inline">\(BF_{20}\)</span> = 0.07이고 <span class="math inline">\(BF_{02}\)</span> = 13.93이다.</p>
+<p><span class="math inline">\(BF_{30}\)</span> = 0.26이고 <span class="math inline">\(BF_{03}\)</span> = 3.89이다. <span class="math inline">\(BF_{20}\)</span> = 0.07이고 <span class="math inline">\(BF_{02}\)</span> = 13.93이다. 이 추정치들은 MCMC
+표본에서 추정한 BF와 상당히 비슷하다.</p>
 <p><br><br></p>
 <hr />
 <p><br><br></p>
