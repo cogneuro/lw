@@ -45,3 +45,15 @@
 - [9.3 Comparing within-subject proportions](https://cogneuro.github.io/lw/ch09/09_3_ModelSelection_Zeelenberg.html)
 - [9.4 Comparing between-subject proportions](https://cogneuro.github.io/lw/ch09/09_4_ModelSelection_Geurts.html)
 - [9.5 Order-restricted between-subjects comparison](https://cogneuro.github.io/lw/ch09/09_5_ModelSelection_GeurtsOrderRestricted.html)
+
+## Part IV Case studies
+
+### 10. Memory retention
+- [10.1 No individual differences](https://cogneuro.github.io/lw/ch10/10_1_MemoryRetention_Retention_1.html)
+- [10.2 Full individual differences](https://cogneuro.github.io/lw/ch10/10_2_MemoryRetention_Retention_2.html)
+- [10.3 Structured individual differences](https://cogneuro.github.io/lw/ch10/10_3_MemoryRetention_Retention_3.html)
+
+### 11. Signal detection theory
+- [11.1 Signal detection theory](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_1.html)
+- [11.2 Hierarchical signal detection theory](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_2.html)
+- [11.3 Parameter expansion](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_3.html)
