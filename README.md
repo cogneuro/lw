@@ -55,5 +55,5 @@
 
 ### 11. Signal detection theory
 - [11.1 Signal detection theory](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_1.html)
-- [11.2 Hierarchical signal detection theory](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_2.html)
-- [11.3 Parameter expansion](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_3.html)
+- [11.2 Hierarchical signal detection theory](https://cogneuro.github.io/lw/ch11/11_2_SignalDetection_SDT_2.html)
+- [11.3 Parameter expansion](https://cogneuro.github.io/lw/ch11/11_3_SignalDetection_SDT_3.html)
