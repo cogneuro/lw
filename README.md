@@ -65,4 +65,4 @@
 ### 13. Extrasensory perception
 - [13.1 Evidence for optional stopping](https://cogneuro.github.io/lw/ch13/13_1_ESP_OptionalStopping.html)
 - [13.2 Evidence for differences in ability](https://cogneuro.github.io/lw/ch13/13_2_ESP_Ability.html)
-- [13.3 Evidence for the impact of extraversion](https://cogneuro.github.io/lw/ch13/13_3_ESP_Extraversion.html)
+- [13.3 Evidence for the impact of extraversion](https://cogneuro.github.io/lw/ch13/13_3_ESP_Extraversion.html) 
