@@ -57,3 +57,12 @@
 - [11.1 Signal detection theory](https://cogneuro.github.io/lw/ch11/11_1_SignalDetection_SDT_1.html)
 - [11.2 Hierarchical signal detection theory](https://cogneuro.github.io/lw/ch11/11_2_SignalDetection_SDT_2.html)
 - [11.3 Parameter expansion](https://cogneuro.github.io/lw/ch11/11_3_SignalDetection_SDT_3.html)
+
+### 12. Psychophysical functions
+- [12.1 Psychophysical functions](https://cogneuro.github.io/lw/ch12/12_PsychophysicalFunctions_Psychophysical.html)
+- [12.2 Psychophysical functions under contamination](https://cogneuro.github.io/lw/ch12/12_PsychophysicalFunctions_Psychophysical.html)
+
+### 13. Extrasensory perception
+- [13.1 Evidence for optional stopping](https://cogneuro.github.io/lw/ch13/13_1_ESP_OptionalStopping.html)
+- [13.2 Evidence for differences in ability](https://cogneuro.github.io/lw/ch13/13_2_ESP_Ability.html)
+- [13.3 Evidence for the impact of extraversion](https://cogneuro.github.io/lw/ch13/13_3_ESP_Extraversion.html)
