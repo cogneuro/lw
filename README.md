@@ -66,3 +66,7 @@
 - [13.1 Evidence for optional stopping](https://cogneuro.github.io/lw/ch13/13_1_ESP_OptionalStopping.html)
 - [13.2 Evidence for differences in ability](https://cogneuro.github.io/lw/ch13/13_2_ESP_Ability.html)
 - [13.3 Evidence for the impact of extraversion](https://cogneuro.github.io/lw/ch13/13_3_ESP_Extraversion.html) 
+
+### 14. Multinomial processing trees
+- [14.1 Multinomial processing model of pair-clustering](https://cogneuro.github.io/lw/ch14/14_1_MPT_MPT_1.html)
+- [14.2 Latent-trait MPT model](https://cogneuro.github.io/lw/ch14/14_2_MPT_MPT_2.html)
