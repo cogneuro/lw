@@ -70,3 +70,7 @@
 ### 14. Multinomial processing trees
 - [14.1 Multinomial processing model of pair-clustering](https://cogneuro.github.io/lw/ch14/14_1_MPT_MPT_1.html)
 - [14.2 Latent-trait MPT model](https://cogneuro.github.io/lw/ch14/14_2_MPT_MPT_2.html)
+
+### 15. The SIMPLE model of memory
+- [15.1 The SIMPLE model](https://cogneuro.github.io/lw/ch15/15_1_Simple_SIMPLE_1.html)
+- [15.2 A hierarchical extension of SIMPLE](https://cogneuro.github.io/lw/ch15/15_2_Simple_SIMPLE_2.html)
