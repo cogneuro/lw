@@ -80,9 +80,9 @@
 - [16.2 A hierarchical extension of the BART model](https://cogneuro.github.io/lw/html/16_2_BART_BART_2.html)
 
 ### 17 The GCM model of categorization
-- 17.1 The GCM model
-- 17.2 Individual differences in the GCM
-- 17.3 Latent groups in the GCM
+- [17.1 The GCM model](https://cogneuro.github.io/lw/html/17_1_GCM_GCM_1.html)
+- [17.2 Individual differences in the GCM](https://cogneuro.github.io/lw/html/17_2_GCM_GCM_2.html)
+- [17.3 Latent groups in the GCM](https://cogneuro.github.io/lw/html/17_3_GCM_GCM_3.html)
 
 ### 18 Heuristic decision-making
 - 18.1 Take-the-best
