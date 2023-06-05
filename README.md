@@ -85,12 +85,12 @@
 - [17.3 Latent groups in the GCM](https://cogneuro.github.io/lw/html/17_3_GCM_GCM_3.html)
 
 ### 18 Heuristic decision-making
-- 18.1 Take-the-best
-- 18.2 Stopping
-- 18.3 Searching
-- 18.4 Searching and stopping
+- [18.1 Take-the-best](https://cogneuro.github.io/lw/html/18_1_HeuristicDecisionMaking_TTB.html)
+- [18.2 Stopping](https://cogneuro.github.io/lw/html/18_2_HeuristicDecisionMaking_Stop.html)
+- [18.3 Searching](https://cogneuro.github.io/lw/html/18_3_HeuristicDecisionMaking_Search.html)
+- [18.4 Searching and stopping](https://cogneuro.github.io/lw/html/18_4_HeuristicDecisionMaking_SearchStop.html)
 
 ### 19 Number concept development
-- 19.1 Knower level model for Give-N
-- 19.2 Knower level model for Fast Cards
-- 19.3 Knower level model for Give-N and Fast Cards
+- [19.1 Knower level model for Give-N](https://cogneuro.github.io/lw/html/19_1_NumberConcepts_NumberConcept_1.html)
+- [19.2 Knower level model for Fast Cards](https://cogneuro.github.io/lw/html/19_2_NumberConcepts_NumberConcept_2.html)
+- [19.3 Knower level model for Give-N and Fast Cards](https://cogneuro.github.io/lw/html/19_3_NumberConcepts_NumberConcept_3.html)
