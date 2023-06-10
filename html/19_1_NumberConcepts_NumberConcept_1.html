@@ -11,7 +11,7 @@
 
 <meta name="author" content="cn" />
 
-<meta name="date" content="2023-06-09" />
+<meta name="date" content="2023-06-10" />
 
 <title>Knower-level model for Give-N</title>
 
@@ -1824,7 +1824,7 @@ border-radius: 0px;
 <h1 class="title toc-ignore">Knower-level model for Give-N</h1>
 <h3 class="subtitle">Lee &amp; Wagenmakers Part IV. 19.1, p238</h3>
 <h4 class="author">cn</h4>
-<h4 class="date">2023-06-09</h4>
+<h4 class="date">2023-06-10</h4>
 
 </div>
 
@@ -1857,7 +1857,7 @@ word-wrap: initial !important;
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>ns <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co"># ns = number of subjects (children)</span></span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>nz <span class="ot">&lt;-</span> <span class="dv">6</span> <span class="co"># nz = number of knower-level stages</span></span>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>gn <span class="ot">&lt;-</span> <span class="dv">15</span> <span class="co"># gn = maximum give-n response</span></span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>gnq <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(d<span class="sc">$</span>gnq) <span class="co"># gnq = number questions for each child on give-n</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>gnq <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(d<span class="sc">$</span>gnq) <span class="co"># 1x20, gnq = number questions for each child on give-n</span></span>
 <span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>gq <span class="ot">&lt;-</span> d<span class="sc">$</span>gq <span class="co"># gq = matrix of questions asked to each child on give-n</span></span>
 <span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>ga <span class="ot">&lt;-</span> d<span class="sc">$</span>ga <span class="co"># ga = matrix of answers given by each child on give-n</span></span></code></pre></div>
 </div>
@@ -1873,8 +1873,8 @@ word-wrap: initial !important;
 <span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="st"># Knower Level Model Applied to Give-N Data</span></span>
 <span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="st">model{</span></span>
 <span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="st">  # Data</span></span>
-<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="st">  for (i in 1:ns){</span></span>
-<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="st">    for (j in 1:gnq[i]){  </span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="st">  for (i in 1:ns){ # 각 아동</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="st">    for (j in 1:gnq[i]){  # 각 아동이 받은 질문 수</span></span>
 <span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="st">      # Probability a z[i]-Knower Will Answer ga[i,j] to Question gq[i,j]</span></span>
 <span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="st">      # is a Categorical Draw From Their Distribution over the 1:gn Toys</span></span>
 <span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="st">      ga[i,j] ~ dcat(npiprime[z[i],gq[i,j],1:gn])</span></span>
@@ -1885,19 +1885,19 @@ word-wrap: initial !important;
 <span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="st">    }</span></span>
 <span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="st">  }</span></span>
 <span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="st">  # Model</span></span>
-<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="st">  for (i in 1:nz){</span></span>
-<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a><span class="st">    for (j in 1:gn){</span></span>
-<span id="cb3-25"><a href="#cb3-25" tabindex="-1"></a><span class="st">      for (k in 1:gn){</span></span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="st">  for (i in 1:nz){ # 6 knower-levels</span></span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a><span class="st">    for (j in 1:gn){ # 15개 질문</span></span>
+<span id="cb3-25"><a href="#cb3-25" tabindex="-1"></a><span class="st">      for (k in 1:gn){ # 15개 대답</span></span>
 <span id="cb3-26"><a href="#cb3-26" tabindex="-1"></a><span class="st">        piprimetmp[i,j,k,1] &lt;- pi[k]</span></span>
 <span id="cb3-27"><a href="#cb3-27" tabindex="-1"></a><span class="st">        piprimetmp[i,j,k,2] &lt;- 1/v*pi[k]</span></span>
 <span id="cb3-28"><a href="#cb3-28" tabindex="-1"></a><span class="st">        piprimetmp[i,j,k,3] &lt;- v*pi[k]</span></span>
 <span id="cb3-29"><a href="#cb3-29" tabindex="-1"></a><span class="st">        # Will be 1 if Knower-Level (i.e, i-1) is Same or Greater than Answer</span></span>
-<span id="cb3-30"><a href="#cb3-30" tabindex="-1"></a><span class="st">        ind1[i,j,k] &lt;- step((i-1)-k)</span></span>
+<span id="cb3-30"><a href="#cb3-30" tabindex="-1"></a><span class="st">        ind1[i,j,k] &lt;- step((i-1)-k) # step(x) = 0, if x &lt; 0</span></span>
 <span id="cb3-31"><a href="#cb3-31" tabindex="-1"></a><span class="st">        # Will be 1 for the Possible Answer that Matches the Question</span></span>
 <span id="cb3-32"><a href="#cb3-32" tabindex="-1"></a><span class="st">        ind2[i,j,k] &lt;- equals(k,j)</span></span>
 <span id="cb3-33"><a href="#cb3-33" tabindex="-1"></a><span class="st">        # Will be 1 for 0-Knowers</span></span>
 <span id="cb3-34"><a href="#cb3-34" tabindex="-1"></a><span class="st">        ind3[i,j,k] &lt;- equals(i,1)</span></span>
-<span id="cb3-35"><a href="#cb3-35" tabindex="-1"></a><span class="st">        # Will be 1 for HN-Knowers</span></span>
+<span id="cb3-35"><a href="#cb3-35" tabindex="-1"></a><span class="st">        # Will be 1 for HN-Knowers (djy, =CP-Knower?)</span></span>
 <span id="cb3-36"><a href="#cb3-36" tabindex="-1"></a><span class="st">        ind4[i,j,k] &lt;- equals(i,nz)</span></span>
 <span id="cb3-37"><a href="#cb3-37" tabindex="-1"></a><span class="st">        ind5[i,j,k] &lt;- ind3[i,j,k]+ind4[i,j,k]*(2+ind2[i,j,k])</span></span>
 <span id="cb3-38"><a href="#cb3-38" tabindex="-1"></a><span class="st">                       + (1-ind4[i,j,k])*(1-ind3[i,j,k])</span></span>
@@ -1914,17 +1914,17 @@ word-wrap: initial !important;
 <span id="cb3-49"><a href="#cb3-49" tabindex="-1"></a><span class="st">    }</span></span>
 <span id="cb3-50"><a href="#cb3-50" tabindex="-1"></a><span class="st">  }      </span></span>
 <span id="cb3-51"><a href="#cb3-51" tabindex="-1"></a><span class="st">  # Base rate</span></span>
-<span id="cb3-52"><a href="#cb3-52" tabindex="-1"></a><span class="st">  for (i in 1:gn){</span></span>
+<span id="cb3-52"><a href="#cb3-52" tabindex="-1"></a><span class="st">  for (i in 1:gn){ # gn = 15, 최대 질문/응답 값</span></span>
 <span id="cb3-53"><a href="#cb3-53" tabindex="-1"></a><span class="st">    pitmp[i] ~ dunif(0,1)</span></span>
-<span id="cb3-54"><a href="#cb3-54" tabindex="-1"></a><span class="st">    pi[i] &lt;- pitmp[i]/sum(pitmp[1:gn])</span></span>
+<span id="cb3-54"><a href="#cb3-54" tabindex="-1"></a><span class="st">    pi[i] &lt;- pitmp[i]/sum(pitmp[1:gn]) # loop 끝나기 전에 pitmp가 어떻게 채워져?</span></span>
 <span id="cb3-55"><a href="#cb3-55" tabindex="-1"></a><span class="st">  }</span></span>
 <span id="cb3-56"><a href="#cb3-56" tabindex="-1"></a><span class="st">  predpi ~ dcat(pi[1:gn]) </span></span>
 <span id="cb3-57"><a href="#cb3-57" tabindex="-1"></a><span class="st">  # Priors   </span></span>
-<span id="cb3-58"><a href="#cb3-58" tabindex="-1"></a><span class="st">  v ~ dunif(1,1000)</span></span>
+<span id="cb3-58"><a href="#cb3-58" tabindex="-1"></a><span class="st">  v ~ dunif(1,1000) # evidence value: pi 업데이트 정도</span></span>
 <span id="cb3-59"><a href="#cb3-59" tabindex="-1"></a><span class="st">  for (i in 1:ns) {</span></span>
-<span id="cb3-60"><a href="#cb3-60" tabindex="-1"></a><span class="st">    z[i] ~ dcat(priorz[])</span></span>
+<span id="cb3-60"><a href="#cb3-60" tabindex="-1"></a><span class="st">    z[i] ~ dcat(priorz[]) # 각 아동의 knower-level</span></span>
 <span id="cb3-61"><a href="#cb3-61" tabindex="-1"></a><span class="st">  }</span></span>
-<span id="cb3-62"><a href="#cb3-62" tabindex="-1"></a><span class="st">  for (i in 1:nz){</span></span>
+<span id="cb3-62"><a href="#cb3-62" tabindex="-1"></a><span class="st">  for (i in 1:nz){ # 6 knower-levels</span></span>
 <span id="cb3-63"><a href="#cb3-63" tabindex="-1"></a><span class="st">    priorz[i] &lt;- 1/6</span></span>
 <span id="cb3-64"><a href="#cb3-64" tabindex="-1"></a><span class="st">  }      </span></span>
 <span id="cb3-65"><a href="#cb3-65" tabindex="-1"></a><span class="st">}</span></span>
@@ -2789,7 +2789,7 @@ Initializing model</code></pre>
 <p>Figure 19.2</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">posterior</span>(samples)</span>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="co"># Figure 12.2 - Posterior for BaseRate</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="co"># Figure 19.2 - Posterior for BaseRate</span></span>
 <span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>p <span class="sc">%&gt;%</span> <span class="fu">select</span>(predpi) <span class="sc">%&gt;%</span> </span>
 <span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>predpi)) <span class="sc">+</span> </span>
 <span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y=</span><span class="fu">after_stat</span>(density)), </span>
@@ -2983,7 +2983,7 @@ Knower-level</h2>
 <span id="cb12-30"><a href="#cb12-30" tabindex="-1"></a>  [<span class="dv">7</span>] estimability_1.<span class="fl">4.1</span>   farver_2.<span class="fl">1.1</span>         rmarkdown_2<span class="fl">.22</span>      </span>
 <span id="cb12-31"><a href="#cb12-31" tabindex="-1"></a> [<span class="dv">10</span>] vctrs_0.<span class="fl">6.2</span>          base64enc_0<span class="fl">.1</span><span class="dv">-3</span>      htmltools_0.<span class="fl">5.5</span>     </span>
 <span id="cb12-32"><a href="#cb12-32" tabindex="-1"></a> [<span class="dv">13</span>] distributional_0.<span class="fl">3.2</span> haven_2.<span class="fl">5.2</span>          broom_1.<span class="fl">0.4</span>         </span>
-<span id="cb12-33"><a href="#cb12-33" tabindex="-1"></a> [<span class="dv">16</span>] sass_0.<span class="fl">4.6</span>           StanHeaders_2.<span class="fl">26.26</span>  bslib_0.<span class="fl">4.2</span>         </span>
+<span id="cb12-33"><a href="#cb12-33" tabindex="-1"></a> [<span class="dv">16</span>] sass_0.<span class="fl">4.6</span>           StanHeaders_2.<span class="fl">26.26</span>  bslib_0.<span class="fl">5.0</span>         </span>
 <span id="cb12-34"><a href="#cb12-34" tabindex="-1"></a> [<span class="dv">19</span>] htmlwidgets_1.<span class="fl">6.2</span>    plyr_1.<span class="fl">8.8</span>           emmeans_1.<span class="fl">8.6</span>       </span>
 <span id="cb12-35"><a href="#cb12-35" tabindex="-1"></a> [<span class="dv">22</span>] zoo_1<span class="fl">.8</span><span class="dv">-12</span>           cachem_1.<span class="fl">0.8</span>         igraph_1.<span class="fl">4.3</span>        </span>
 <span id="cb12-36"><a href="#cb12-36" tabindex="-1"></a> [<span class="dv">25</span>] mime_0<span class="fl">.12</span>            lifecycle_1.<span class="fl">0.3</span>      pkgconfig_2.<span class="fl">0.3</span>     </span>
