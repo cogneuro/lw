@@ -1869,7 +1869,7 @@ word-wrap: initial !important;
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>m <span class="ot">&lt;-</span> d<span class="sc">$</span>m <span class="co"># 83 자극 x 9 단서 </span></span>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>p <span class="ot">&lt;-</span> d<span class="sc">$</span>p <span class="co"># 30문제 x 2 자극 번호</span></span>
 <span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(d<span class="sc">$</span>v) <span class="co"># 9개 단서의 validity</span></span>
-<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(d<span class="sc">$</span>x)</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(d<span class="sc">$</span>x) <span class="co"># 9개 단서의 validity on log-odds evidence scale (see Chapter 18.2)</span></span>
 <span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>y <span class="ot">&lt;-</span> d<span class="sc">$</span>y <span class="co"># 20명 x 30문제 </span></span>
 <span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a></span>
 <span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">dim</span>(m)[<span class="dv">1</span>] <span class="co"># 자극 83개</span></span>
@@ -2562,7 +2562,7 @@ Initializing model</code></pre>
 번째 자극(a 도시)를 택한 것이다. 동그라미의 면적은 첫 번째 자극이 선택될
 사후예측확률이다. 따라서 동그라미가 하늘색 배경에서 크고, 흰 배경에서
 작으면 model fit이 좋은 것이다.</p>
-<p>동그라미 면적이 잘 구분되지 않아서 임의로 PPD 평균이 0.765 이상인
+<p>동그라미 면적이 잘 구분되지 않아서 임의로 PPD 평균인 0.765 이상인
 경우(<code>predSize</code> = big)를 주황색으로 칠했다. 참가자가 첫
 옵션을 택한 비율은 약 75%인데(<code>mean(y)</code>), 주황색 원이 하늘색
 바탕에 제시된 비율은 약 90%이다(= 25/28). 모델이 어느정도는 자료와
